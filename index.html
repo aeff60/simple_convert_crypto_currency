@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Wallet Crypto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="getCookie()">
+    <div class="header">
+        <h1>ยอดเงินของฉัน</h1>
+
+        <h3 id="sum"></h3>
+    </div>
+<script src="script.js"></script>
+
+
+<form action="/index.html">
+    <div id="content"> 
+    <select id="cryto">
+      <option id="symbol"></option>
+    </select>
+    <input type="text" id="balance" name="balance" placeholder="your balance of coins">
+    <label id="price"></label>
+    <label > USD</label>
+</div>
+    <br><br>
+    <label id="lab1cryto"></label>
+    <label id="lab1balance"></label>
+
+    <br><br>
+    <input type="submit" value="Submit" id="summit" onclick="putCookie(document.getElementsByTagName('form'));">
+   
+  </form>
+
+</body>
+
+</html>
